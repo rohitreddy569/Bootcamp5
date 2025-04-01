@@ -92,7 +92,7 @@
 				]
 			},
 			{
-				"name": "updating the control table",
+				"name": "Stored procedure1",
 				"type": "SqlServerStoredProcedure",
 				"dependsOn": [
 					{
@@ -113,12 +113,12 @@
 				"typeProperties": {
 					"storedProcedureName": "[dbo].[UpdateControlTable]",
 					"storedProcedureParameters": {
-						"@NewLastProcessedTime": {
+						"NewLastProcessedTime": {
 							"value": {
-								"value": "@utcNow()",
+								"value": "utcNow",
 								"type": "Expression"
 							},
-							"type": "String"
+							"type": "DateTime"
 						}
 					}
 				},
