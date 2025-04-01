@@ -1,0 +1,9 @@
+{
+	"name": "bootcamp5adf",
+	"location": "westus",
+	"identity": {
+		"type": "SystemAssigned",
+		"principalId": "54940871-0329-435b-89e1-03f7de954d71",
+		"tenantId": "c2b25586-973e-4d75-8d8c-10c7596bfb6d"
+	}
+}
