@@ -114,8 +114,11 @@
 					"storedProcedureName": "[dbo].[UpdateControlTable]",
 					"storedProcedureParameters": {
 						"@NewLastProcessedTime": {
-							"value": "@utcnow()",
-							"type": "Datetime"
+							"value": {
+								"value": "@utcNow()",
+								"type": "Expression"
+							},
+							"type": "String"
 						}
 					}
 				},
