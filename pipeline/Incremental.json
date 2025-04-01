@@ -111,7 +111,13 @@
 				},
 				"userProperties": [],
 				"typeProperties": {
-					"storedProcedureName": "[dbo].[UpdateControlTable]"
+					"storedProcedureName": "[dbo].[UpdateControlTable]",
+					"storedProcedureParameters": {
+						"@NewLastProcessedTime": {
+							"value": "@utcnow()",
+							"type": "Datetime"
+						}
+					}
 				},
 				"linkedServiceName": {
 					"referenceName": "ls_sqldatabase",
